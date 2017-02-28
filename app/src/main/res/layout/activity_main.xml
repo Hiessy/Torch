@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:gravity="center"
+    android:id="@+id/widget49"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <Button
+        android:id="@+id/selectMarketButton"
+        android:layout_width="0dip"
+        android:layout_weight="0.5"
+        android:padding="0dp"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        android:layout_marginTop="50dip"
+        android:layout_marginBottom="25dip"
+        android:text="@string/button_selectMarket"
+        android:background="@drawable/select_market_button"
+        android:onClick="selectMarket"
+        android:textSize="40sp"/>
+
+    <Button
+        android:id="@+id/Button02"
+        android:layout_width="0dip"
+        android:layout_weight="0.5"
+        android:padding="0dp"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        android:layout_marginTop="25dip"
+        android:layout_marginBottom="50dip"
+        android:text="@string/button_send"
+        android:background="@drawable/data_button"
+        android:onClick="sendData"
+        android:textSize="40sp"/>
+
+</TableLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My First App</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_selectMarket">Select Market</string>
+    <string name="button_send">Send DATA</string>
+    <string name="select_market__text_view">Select a market</string>
+    <string name="gps_banner_text_view"> Or make sure gps is on</string>
+    <string name="shop_name_edit_text">Enter the name of the market</string>
+    <string name="auto_detect_location_button">Press to Auto Detect</string>
+    <string name="street_edit_text">Enter Street</string>
+    <string name="city_edit_text">Enter City</string>
+    <string name="shop_button">Shop</string>
+    <string name="province_spinner_text">Select a State/Province...</string>
+    <string name="country_spinner_text">Select a Country...</string>
+    <string name="market_spinner_text">Select a market...</string>
+    <string name="total_edit_text">Total spent</string>
+    <string name="add_new_product">Click to create product</string>
+    <string name="add_product">Add product</string>
+    <string name="brand_edit_text">Enter the brand</string>
+    <string name="name_edit_text">Enter the name</string>
+    <string name="model_edit_text">Enter the model</string>
+    <string name="amount_edit_text">Select the quantaty</string>
+    <string name="price_edit_text">Enter the price</string>
+    <string name="weight_edit_text">Enter the weight in Gramms</string>
+    <string name="code_edit_text">Enter the code if available</string>
+    <string name="type_text_view">Select the type of product</string>
+    <string name="select_product">select product</string>
+
+    <string-array name="type_spinner_array">
+        <item>Food</item>
+        <item>Beverage</item>
+        <item>Cleaning</item>
+        <item>Higiene</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="country_spinner_array">
+        <item>AR</item>
+        <item>BR</item>
+        <item>CA</item>
+        <item>FR</item>
+        <item>IT</item>
+        <item>JP</item>
+        <item>UK</item>
+        <item>US</item>
+    </string-array>
+
+
+</resources>

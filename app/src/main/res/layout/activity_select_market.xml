@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:id="@+id/widget49"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/stored_market_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:hint="@string/market_spinner_text" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:gravity="center"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+    <TextView android:id="@+id/gps_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gps_banner_text_view" />
+
+    <EditText android:id="@+id/shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/shop_name_edit_text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="autoDetectLocation"
+        android:text="@string/auto_detect_location_button" />
+
+    <EditText android:id="@+id/street_edit_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/street_edit_text" />
+
+    <EditText android:id="@+id/city_edit_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/city_edit_text" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Spinner
+        android:id="@+id/province_state_spinner"
+        android:layout_width="270dp"
+        android:layout_height="30dp"
+        android:text="@string/province_spinner_text" />
+
+    <Spinner
+        android:id="@+id/country_spinner"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:text="@string/country_spinner_text" />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goShopping"
+        android:text="@string/shop_button" />
+    </LinearLayout>
+</TableLayout>
