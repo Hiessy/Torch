@@ -24,6 +24,15 @@ public class Shop {
         this.latLon = latLon;
     }
 
+    public Shop(String shopName, String street, String city, String province, String country, String latLon) {
+        this.shopName = shopName;
+        this.street = street;
+        this.city = city;
+        this.province = province;
+        this.country = country;
+        this.latLon = latLon;
+    }
+
     public long getId() {
         return id;
     }

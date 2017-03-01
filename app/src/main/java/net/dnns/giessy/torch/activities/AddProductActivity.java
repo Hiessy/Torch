@@ -9,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import net.dnns.giessy.torch.R;
+import net.dnns.giessy.torch.model.Product;
+import net.dnns.giessy.torch.model.Shop;
 
 import java.util.prefs.Preferences;
 
@@ -16,6 +18,7 @@ public class AddProductActivity extends AppCompatActivity implements AdapterView
 
     private Spinner typeSpinner;
     private Bundle bundle = new Bundle();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,18 +37,21 @@ public class AddProductActivity extends AppCompatActivity implements AdapterView
 
         Intent intent = new Intent(this, ShopActivity.class);
 
-/*        bundle.putString("name",String.valueOf(((EditText)findViewById(R.id.name_edit_text)).getText() ));
-        bundle.putString("brand",String.valueOf(((EditText)findViewById(R.id.brand_edit_text)).getText() ));
-        bundle.putString("model",String.valueOf(((EditText)findViewById(R.id.model_edit_text)).getText() ));
-        bundle.putString("amount",String.valueOf(((EditText)findViewById(R.id.amount_edit_text)).getText() ));
-        bundle.putString("price",String.valueOf(((EditText)findViewById(R.id.price_edit_text)).getText() ));
-        bundle.putString("weight",String.valueOf(((EditText)findViewById(R.id.weight_edit_text)).getText() ));
-        bundle.putString("code ",String.valueOf(((EditText)findViewById(R.id.code_edit_text)).getText() ));
-        bundle.putString("totalPrice",getIntent().getStringExtra("totalPrice"));
+        String name = ((EditText)findViewById(R.id.name_edit_text)).getText().toString();
+        String brand = ((EditText)findViewById(R.id.brand_edit_text)).getText().toString();
+        String model = ((EditText)findViewById(R.id.model_edit_text)).getText().toString();
+        String amount = ((EditText)findViewById(R.id.amount_edit_text)).getText().toString();
+        String price = ((EditText)findViewById(R.id.price_edit_text)).getText().toString();
+        String weight = ((EditText)findViewById(R.id.weight_edit_text)).getText().toString();
+        String code  = ((EditText)findViewById(R.id.code_edit_text)).getText().toString();
 
+
+
+       Product product = new Product(name,brand,model,amount,price,weight,code);
         //guardar en el local storage
 
-        intent.putExtras(bundle);*/
+
+        intent.putExtras(bundle);
 
         startActivity(intent);
     }
